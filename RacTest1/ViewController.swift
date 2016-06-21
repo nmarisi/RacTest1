@@ -7,12 +7,21 @@
 //
 
 import UIKit
+import ReactiveCocoa
+import Result
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        // TODO:
+        // Add labels for count
+        // for filter (capitalised to uncapilised)
+        // hide password
+        // text to bool
+        // delay?
+        // throtte?
     }
 
     override func didReceiveMemoryWarning() {
