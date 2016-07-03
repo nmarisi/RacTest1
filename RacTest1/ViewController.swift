@@ -26,16 +26,16 @@ class ViewController: UIViewController, UITextFieldDelegate {
         // 1. Observing as timer signal for 10 events.
         timerSignal()
             .take(10)
-            .observeNext { [unowned self] next in
-                self.countLabel.text = next
+            .observeNext { [weak self] next in
+                self?.countLabel.text = next
         }
         
         // 2a. Lowercase to uppercase.
         lowerToUpperSignal()
             .takeUntil(self.rac_WillDeallocSignalProducer())
             .throttle(0.5, onScheduler: QueueScheduler.mainQueueScheduler)
-            .startWithNext { [unowned self] next in
-                self.capsLabel.text = next
+            .startWithNext { [weak self] next in
+                self?.capsLabel.text = next
         }
         
         // 2b. Alterative implementation of lowercase to uppercase without RAC.
@@ -44,8 +44,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
         
         // 3. Phone signal
        phoneSignalProducer()
-           .startWithNext { [unowned self] next in
-                self.phoneLabel.text = "YES"
+           .startWithNext { [weak self] next in
+                self?.phoneLabel.text = "YES"
         }
         
     }
