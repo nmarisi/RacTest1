@@ -1,6 +1,5 @@
 //
 //  NSObject+RAC.swift
-//  Farmdrop
 //
 //  Created by Nahuel Marisi on 2016-06-06.
 //  Copyright © 2016 TechBrewers. All rights reserved.
