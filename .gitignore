@@ -17,7 +17,6 @@ xcuserdata
 *.xcscmblueprint
 *.hmap
 *.ipa
-Pods/
 dump.rdb
 *.xcbkptlist
 
