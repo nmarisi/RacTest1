@@ -87,6 +87,10 @@ class ViewController: UIViewController, UITextFieldDelegate {
         return phoneTextField
             .rac_textSignal()
             .toSignalProducer()
+            // Make sure to set the label to NO when we get new text from the textfield.
+            .on( next: { [weak self] nextString in
+                self?.phoneLabel.text = "NO"
+            })
             .filter { next in
                 guard let string = next else {
                     return false
