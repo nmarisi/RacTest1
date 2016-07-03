@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="RacTest1" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +17,108 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Count Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="emW-MA-zgn">
+                                <rect key="frame" x="254" y="28" width="93" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="| MAP to caps | V" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VEP-5Z-7xf">
+                                <rect key="frame" x="247" y="137" width="106" height="75"/>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="16"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter text" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Obs-VS-Ijt">
+                                <rect key="frame" x="20" y="99" width="560" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CAPs TEXT" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aBk-Vb-k3b">
+                                <rect key="frame" x="20" y="220" width="560" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter phone number" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yhm-Jx-9sx">
+                                <rect key="frame" x="20" y="291" width="560" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NO" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yy3-gy-SIU">
+                                <rect key="frame" x="20" y="449" width="560" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="| FILTER 07* | MAP to Bool | V" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rls-gN-Oh3">
+                                <rect key="frame" x="20" y="329" width="560" height="112"/>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="16"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="yhm-Jx-9sx" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="8" id="31l-Fj-Fwp"/>
+                            <constraint firstItem="Obs-VS-Ijt" firstAttribute="centerY" secondItem="VEP-5Z-7xf" secondAttribute="centerY" id="4zg-Gc-8AE"/>
+                            <constraint firstItem="Obs-VS-Ijt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="86q-nr-pjk"/>
+                            <constraint firstItem="emW-MA-zgn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="F88-2w-zf9"/>
+                            <constraint firstItem="Obs-VS-Ijt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="8" id="G5F-sr-Km5"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="aBk-Vb-k3b" secondAttribute="trailing" id="IOd-Ni-20e"/>
+                            <constraint firstItem="VEP-5Z-7xf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="KOn-h3-PxM"/>
+                            <constraint firstItem="yy3-gy-SIU" firstAttribute="leading" secondItem="yhm-Jx-9sx" secondAttribute="trailing" constant="8" id="LZR-0K-2UT"/>
+                            <constraint firstItem="VEP-5Z-7xf" firstAttribute="top" secondItem="Obs-VS-Ijt" secondAttribute="bottom" constant="8" id="MOO-5A-dPq"/>
+                            <constraint firstItem="emW-MA-zgn" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="NtP-pK-IJx"/>
+                            <constraint firstItem="yhm-Jx-9sx" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="O2a-7f-aTf"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="yy3-gy-SIU" secondAttribute="trailing" constant="8" id="QN7-hG-LBi"/>
+                            <constraint firstItem="aBk-Vb-k3b" firstAttribute="centerY" secondItem="VEP-5Z-7xf" secondAttribute="centerY" id="R1m-fP-LLf"/>
+                            <constraint firstItem="rls-gN-Oh3" firstAttribute="top" secondItem="yhm-Jx-9sx" secondAttribute="bottom" constant="8" id="RDL-LR-9ll"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="yhm-Jx-9sx" secondAttribute="trailing" id="RkE-Wj-2JV"/>
+                            <constraint firstAttribute="trailing" secondItem="aBk-Vb-k3b" secondAttribute="trailing" constant="8" id="Um7-T5-Mor"/>
+                            <constraint firstItem="rls-gN-Oh3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Yff-a8-wEs"/>
+                            <constraint firstItem="Obs-VS-Ijt" firstAttribute="top" secondItem="emW-MA-zgn" secondAttribute="bottom" constant="50" id="Yze-Kn-eQU"/>
+                            <constraint firstItem="yy3-gy-SIU" firstAttribute="top" secondItem="rls-gN-Oh3" secondAttribute="bottom" constant="8" id="Z87-mc-PlR"/>
+                            <constraint firstItem="aBk-Vb-k3b" firstAttribute="top" secondItem="VEP-5Z-7xf" secondAttribute="bottom" constant="8" id="bjW-yf-0Pl"/>
+                            <constraint firstItem="VEP-5Z-7xf" firstAttribute="leading" secondItem="Obs-VS-Ijt" secondAttribute="trailing" constant="8" id="dSt-qS-y3v"/>
+                            <constraint firstItem="aBk-Vb-k3b" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="dW7-ZO-Hol"/>
+                            <constraint firstItem="Obs-VS-Ijt" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="dl8-hB-s4P"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="yy3-gy-SIU" secondAttribute="trailing" id="fEq-Vw-zoa"/>
+                            <constraint firstItem="yhm-Jx-9sx" firstAttribute="top" secondItem="aBk-Vb-k3b" secondAttribute="bottom" constant="50" id="ofU-lE-KGg"/>
+                            <constraint firstItem="yy3-gy-SIU" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="sTR-Z6-rRh"/>
+                            <constraint firstItem="aBk-Vb-k3b" firstAttribute="leading" secondItem="VEP-5Z-7xf" secondAttribute="trailing" constant="8" id="soE-uY-Jow"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Obs-VS-Ijt" secondAttribute="trailing" id="tF3-fc-bjh"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="rls-gN-Oh3" secondAttribute="trailing" id="wTd-yP-NJd"/>
+                            <constraint firstItem="VEP-5Z-7xf" firstAttribute="top" secondItem="emW-MA-zgn" secondAttribute="bottom" constant="28" id="ydF-dZ-dMZ"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="4zg-Gc-8AE"/>
+                                <exclude reference="G5F-sr-Km5"/>
+                                <exclude reference="dl8-hB-s4P"/>
+                                <exclude reference="R1m-fP-LLf"/>
+                                <exclude reference="Um7-T5-Mor"/>
+                                <exclude reference="soE-uY-Jow"/>
+                                <exclude reference="31l-Fj-Fwp"/>
+                                <exclude reference="dSt-qS-y3v"/>
+                                <exclude reference="ydF-dZ-dMZ"/>
+                                <exclude reference="LZR-0K-2UT"/>
+                                <exclude reference="QN7-hG-LBi"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="capsLabel" destination="aBk-Vb-k3b" id="ors-AT-Apb"/>
+                        <outlet property="countLabel" destination="emW-MA-zgn" id="LeH-hX-Q8B"/>
+                        <outlet property="lowercaseTextField" destination="Obs-VS-Ijt" id="cbw-wY-O6y"/>
+                        <outlet property="phoneLabel" destination="yy3-gy-SIU" id="noQ-NM-HbE"/>
+                        <outlet property="phoneTextField" destination="yhm-Jx-9sx" id="Spx-Cg-wbz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="920" y="727"/>
         </scene>
     </scenes>
 </document>

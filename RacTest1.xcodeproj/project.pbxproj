@@ -12,6 +12,8 @@
 		4D86DBB41D171D1D004C046D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D86DBB21D171D1D004C046D /* Main.storyboard */; };
 		4D86DBB61D171D1D004C046D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D86DBB51D171D1D004C046D /* Assets.xcassets */; };
 		4D86DBB91D171D1D004C046D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D86DBB71D171D1D004C046D /* LaunchScreen.storyboard */; };
+		4DDADE691D28615C0044EC89 /* NSTimer+Closure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDADE681D28615C0044EC89 /* NSTimer+Closure.swift */; };
+		4DDADE6B1D297A340044EC89 /* NSObject+RAC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDADE6A1D297A340044EC89 /* NSObject+RAC.swift */; };
 		7D656B7D1A94D0DE2352C6B4 /* Pods_RacTest1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 502D19F547EA134B315CAEB4 /* Pods_RacTest1.framework */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +25,8 @@
 		4D86DBB51D171D1D004C046D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4D86DBB81D171D1D004C046D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4D86DBBA1D171D1D004C046D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4DDADE681D28615C0044EC89 /* NSTimer+Closure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSTimer+Closure.swift"; sourceTree = "<group>"; };
+		4DDADE6A1D297A340044EC89 /* NSObject+RAC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+RAC.swift"; sourceTree = "<group>"; };
 		502D19F547EA134B315CAEB4 /* Pods_RacTest1.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RacTest1.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F89B3EEB98BAE3EDDD2362B /* Pods-RacTest1.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RacTest1.release.xcconfig"; path = "Pods/Target Support Files/Pods-RacTest1/Pods-RacTest1.release.xcconfig"; sourceTree = "<group>"; };
 		97CD76093906C99AE074DBDC /* Pods-RacTest1.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RacTest1.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RacTest1/Pods-RacTest1.debug.xcconfig"; sourceTree = "<group>"; };
@@ -76,6 +80,8 @@
 				4D86DBB51D171D1D004C046D /* Assets.xcassets */,
 				4D86DBB71D171D1D004C046D /* LaunchScreen.storyboard */,
 				4D86DBBA1D171D1D004C046D /* Info.plist */,
+				4DDADE6A1D297A340044EC89 /* NSObject+RAC.swift */,
+				4DDADE681D28615C0044EC89 /* NSTimer+Closure.swift */,
 			);
 			path = RacTest1;
 			sourceTree = "<group>";
@@ -210,7 +216,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4DDADE691D28615C0044EC89 /* NSTimer+Closure.swift in Sources */,
 				4D86DBB11D171D1D004C046D /* ViewController.swift in Sources */,
+				4DDADE6B1D297A340044EC89 /* NSObject+RAC.swift in Sources */,
 				4D86DBAF1D171D1D004C046D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
